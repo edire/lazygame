@@ -1,0 +1,198 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  position: relative;
+}
+.question-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/images/background.png");
+  background-size: 100% 100%;
+}
+.question-container .top-title {
+  position: absolute;
+  width: 11.939rem;
+  height: 3.02rem;
+  left: 1.92rem;
+  top: 1.74rem;
+  background-image: url("/images/top-title.png");
+  background-size: 100% 100%;
+  z-index: 888;
+}
+.question-container .question-back {
+  position: absolute;
+  width: 13.185rem;
+  left: 1.407rem;
+  height: 9.481rem;
+  top: 4.7rem;
+  background-image: url("/images/question-back.png");
+  background-size: 100% 100%;
+  z-index: 888;
+}
+.question-container .question-back .question-content {
+  position: absolute;
+  -webkit-transition: -webkit-mask-position 1s ease;
+}
+.question-container .answer-back {
+  position: absolute;
+  width: 5.333rem;
+  height: 4.4rem;
+  top: 13.56rem;
+  background-image: url("/images/answer-back.png");
+  background-size: 100% 100%;
+  z-index: 888;
+  -webkit-transform-origin: top center;
+}
+.question-container .answer-back.yep {
+  left: 2.2rem;
+}
+.question-container .answer-back.nope {
+  left: 8.5rem;
+}
+.question-container .answer-back .yep-word {
+  position: absolute;
+  background-image: url("/images/yep.png");
+  background-size: 100% 100%;
+  width: 1.614rem;
+  height: 1.733rem;
+  top: 2.322rem;
+  left: 1.8rem;
+  z-index: 999;
+}
+.question-container .answer-back .nope-word {
+  position: absolute;
+  background-image: url("/images/nope.png");
+  background-size: 100% 100%;
+  width: 1.57rem;
+  height: 1.718rem;
+  top: 2.322rem;
+  left: 1.8rem;
+  z-index: 999;
+}
+.question-container .left-bear {
+  position: absolute;
+  background-image: url("/images/bear.png");
+  background-size: 100% 100%;
+  width: 4.918rem;
+  height: 8.458rem;
+  left: 0.5rem;
+  bottom: 0.5rem;
+  z-index: 500;
+}
+.question-container .cloud1 {
+  position: absolute;
+  width: 9.303rem;
+  height: 3.525rem;
+  background-image: url("/images/cloud1.png");
+  background-size: 100% 100%;
+  top: 17rem;
+  left: -3.3rem;
+  z-index: 100;
+  -webkit-animation: cloud1 5s linear infinite;
+}
+.question-container .cloud2 {
+  position: absolute;
+  width: 9.303rem;
+  height: 3.525rem;
+  background-image: url("/images/cloud2.png");
+  background-size: 100% 100%;
+  top: 13rem;
+  left: 9rem;
+  z-index: 100;
+  -webkit-animation: cloud2 18s linear infinite;
+}
+.question-container .cloud3 {
+  position: absolute;
+  width: 9.303rem;
+  height: 3.525rem;
+  background-image: url("/images/cloud3.png");
+  background-size: 100% 100%;
+  left: -1rem;
+  top: 4.44rem;
+  z-index: 100;
+  -webkit-animation: cloud3 9s linear infinite;
+}
+.question-container .please {
+  position: absolute;
+  width: 8.814rem;
+  height: 1.007rem;
+  background-image: url("/images/please.png");
+  background-size: 100% 100%;
+  bottom: 1rem;
+  right: 1rem;
+  bottom: 2rem;
+  right: 1.2rem;
+  z-index: 200;
+}
+.question-container .question1 {
+  background-image: url("/images/question/1.png");
+  background-size: 100% 100%;
+  width: 11.925rem;
+  height: 4rem;
+  left: 0.4rem;
+  top: 3.9rem;
+}
+.question-container .question2 {
+  background-image: url("/images/question/2.png");
+  background-size: 100% 100%;
+  width: 11.925rem;
+  height: 2.637rem;
+  left: 0.4rem;
+  top: 3.9rem;
+}
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(5deg);
+  }
+  75% {
+    -webkit-transform: rotate(-2deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes cloud1 {
+  0% {
+    -webkit-transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(7rem, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+  }
+}
+@-webkit-keyframes cloud2 {
+  0% {
+    -webkit-transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(-12rem, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+  }
+}
+@-webkit-keyframes cloud3 {
+  0% {
+    -webkit-transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(9rem, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+  }
+}
