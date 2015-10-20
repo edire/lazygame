@@ -2,23 +2,21 @@ html,body{margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden;}
 body {
     position: relative;
 }
-
-
 .question-container {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url("/lazygame/html/images/background.png");
+    background-image: url("../images/background.png");
     background-size: 100% 100%;
     .top-title {
         position: absolute;
-        width: 11.939rem;
-        height: 3.02rem;
-        left: 1.92rem;
+        width: 10.154rem;
+        height: 3.093rem;
+        left: 2.92rem;
         top: 1.74rem;
-        background-image: url("/lazygame/html/images/top-title.png");
+        background-image: url("../images/top-title.png");
         background-size: 100% 100%;
         z-index: 888;
 
@@ -29,7 +27,7 @@ body {
         left: 1.407rem;
         height: 9.481rem;
         top: 4.7rem;
-        background-image: url("/lazygame/html/images/question-back.png");
+        background-image: url("../images/question-back.png");
         background-size: 100% 100%;
         z-index: 888;
         .question-content {
@@ -42,7 +40,7 @@ body {
         width: 5.333rem;
         height: 4.4rem;
         top: 13.56rem;
-        background-image: url("/lazygame/html/images/answer-back.png");
+        background-image: url("../images/answer-back.png");
         background-size: 100% 100%;
         z-index: 888;
         -webkit-transform-origin: top center;
@@ -55,7 +53,7 @@ body {
 
         .yep-word {
             position: absolute;
-            background-image: url("/lazygame/html/images/yep.png");
+            background-image: url("../images/yep.png");
             background-size: 100% 100%;
             width: 1.614rem;
             height: 1.733rem;
@@ -66,7 +64,7 @@ body {
 
         .nope-word {
             position: absolute;
-            background-image: url("/lazygame/html/images/nope.png");
+            background-image: url("../images/nope.png");
             background-size: 100% 100%;
             width: 1.57rem;
             height: 1.718rem;
@@ -77,10 +75,10 @@ body {
     }
     .left-bear {
         position: absolute;
-        background-image: url("/lazygame/html/images/bear.png");
+        background-image: url("../images/bear.png");
         background-size: 100% 100%;
-        width: 4.918rem;
-        height: 8.458rem;
+        width: 4.018rem;
+        height: 6.458rem;
         left: 0.5rem;
         bottom: 0.5rem;
         z-index: 500;
@@ -89,7 +87,7 @@ body {
         position: absolute;
         width: 9.303rem;
         height: 3.525rem;
-        background-image: url("/lazygame/html/images/cloud1.png");
+        background-image: url("../images/cloud1.png");
         background-size: 100% 100%;
         top: 17rem;
         left: -3.3rem;
@@ -100,18 +98,18 @@ body {
         position: absolute;
         width: 9.303rem;
         height: 3.525rem;
-        background-image: url("/lazygame/html/images/cloud2.png");
+        background-image: url("../images/cloud2.png");
         background-size: 100% 100%;
         top: 13rem;
         left: 9rem;
         z-index: 100;
-        -webkit-animation: cloud2 18s linear infinite;
+        -webkit-animation: cloud2 10s linear infinite;
     }
     .cloud3 {
         position: absolute;
         width: 9.303rem;
         height: 3.525rem;
-        background-image: url("/lazygame/html/images/cloud3.png");
+        background-image: url("../images/cloud3.png");
         background-size: 100% 100%;
         left: -1rem;
         top: 4.44rem;
@@ -122,7 +120,7 @@ body {
         position: absolute;
         width: 8.814rem;
         height: 1.007rem;
-        background-image: url("/lazygame/html/images/please.png");
+        background-image: url("../images/please.png");
         background-size: 100% 100%;
         bottom: 1rem;
         right: 1rem;
@@ -130,11 +128,46 @@ body {
         right: 1.2rem;
         z-index: 200;
     }
-
+    .star {
+        position: absolute;
+        width: 1.481rem;
+        height: 1.481rem;
+        background-image: url("../images/star.png");
+        background-size: 100% 100%;
+        z-index: 20;
+        opacity: 0.8;
+    }
+    .star1 {
+        right: 3.6rem;
+        top: 5.2rem;
+    }
+    .star2 {
+        bottom: 1.2rem;
+        left: 8rem;
+    }
+    .line {
+        position: absolute;
+        width: 1px;
+        background: #fff;
+        height: 10rem;
+        z-index: 20;
+        opacity: 0.3;
+    }
+    .line1 {
+        right: 1.7rem;
+        transform: rotate(37deg);
+        top: -3rem;
+        z-index: 20;
+    }
+    .line2 {
+        left: 12rem;
+        transform: rotate(37deg);
+        bottom: 1.2rem;
+    }
 
 
     .question1 {
-        background-image: url("/lazygame/html/images/question/1.png");
+        background-image: url("../images/question/1.png");
         background-size: 100% 100%;
         width: 11.925rem;
         height: 4rem;
@@ -142,7 +175,7 @@ body {
         top: 3.9rem;
     }
     .question2 {
-        background-image: url("/lazygame/html/images/question/2.png");
+        background-image: url("../images/question/2.png");
         background-size: 100% 100%;
         width: 11.925rem;
         height: 2.637rem;
@@ -183,7 +216,7 @@ body {
         -webkit-transform: translate(0, 0);
     }
     50% {
-        -webkit-transform: translate(-12rem, 0);
+        -webkit-transform: translate(-6rem, 0);
     }
     100% {
         -webkit-transform: translate(0, 0);

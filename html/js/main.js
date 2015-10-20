@@ -1,1 +1,1 @@
-bindEvent()
+bindEvent();
