@@ -4,3 +4,7 @@ fis.match('*.less', {
   // .less 文件后缀构建后被改成 .css 文件
   rExt: '.css'
 });
+
+fis.match('*.{png,js,css}', {
+  release: 'static/$0',
+});
