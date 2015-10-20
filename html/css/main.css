@@ -15,7 +15,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("/images/background.png");
+  background-image: url("../images/background.png");
   background-size: 100% 100%;
 }
 .question-container .top-title {
@@ -24,7 +24,7 @@ body {
   height: 3.02rem;
   left: 1.92rem;
   top: 1.74rem;
-  background-image: url("/images/top-title.png");
+  background-image: url("../images/top-title.png");
   background-size: 100% 100%;
   z-index: 888;
 }
@@ -34,7 +34,7 @@ body {
   left: 1.407rem;
   height: 9.481rem;
   top: 4.7rem;
-  background-image: url("/images/question-back.png");
+  background-image: url("../images/question-back.png");
   background-size: 100% 100%;
   z-index: 888;
 }
@@ -47,7 +47,7 @@ body {
   width: 5.333rem;
   height: 4.4rem;
   top: 13.56rem;
-  background-image: url("/images/answer-back.png");
+  background-image: url("../images/answer-back.png");
   background-size: 100% 100%;
   z-index: 888;
   -webkit-transform-origin: top center;
@@ -60,7 +60,7 @@ body {
 }
 .question-container .answer-back .yep-word {
   position: absolute;
-  background-image: url("/images/yep.png");
+  background-image: url("../images/yep.png");
   background-size: 100% 100%;
   width: 1.614rem;
   height: 1.733rem;
@@ -70,7 +70,7 @@ body {
 }
 .question-container .answer-back .nope-word {
   position: absolute;
-  background-image: url("/images/nope.png");
+  background-image: url("../images/nope.png");
   background-size: 100% 100%;
   width: 1.57rem;
   height: 1.718rem;
@@ -80,7 +80,7 @@ body {
 }
 .question-container .left-bear {
   position: absolute;
-  background-image: url("/images/bear.png");
+  background-image: url("../images/bear.png");
   background-size: 100% 100%;
   width: 4.918rem;
   height: 8.458rem;
@@ -92,7 +92,7 @@ body {
   position: absolute;
   width: 9.303rem;
   height: 3.525rem;
-  background-image: url("/images/cloud1.png");
+  background-image: url("../images/cloud1.png");
   background-size: 100% 100%;
   top: 17rem;
   left: -3.3rem;
@@ -103,7 +103,7 @@ body {
   position: absolute;
   width: 9.303rem;
   height: 3.525rem;
-  background-image: url("/images/cloud2.png");
+  background-image: url("../images/cloud2.png");
   background-size: 100% 100%;
   top: 13rem;
   left: 9rem;
@@ -114,7 +114,7 @@ body {
   position: absolute;
   width: 9.303rem;
   height: 3.525rem;
-  background-image: url("/images/cloud3.png");
+  background-image: url("../images/cloud3.png");
   background-size: 100% 100%;
   left: -1rem;
   top: 4.44rem;
@@ -125,7 +125,7 @@ body {
   position: absolute;
   width: 8.814rem;
   height: 1.007rem;
-  background-image: url("/images/please.png");
+  background-image: url("../images/please.png");
   background-size: 100% 100%;
   bottom: 1rem;
   right: 1rem;
@@ -134,7 +134,7 @@ body {
   z-index: 200;
 }
 .question-container .question1 {
-  background-image: url("/images/question/1.png");
+  background-image: url("../images/question/1.png");
   background-size: 100% 100%;
   width: 11.925rem;
   height: 4rem;
@@ -142,7 +142,7 @@ body {
   top: 3.9rem;
 }
 .question-container .question2 {
-  background-image: url("/images/question/2.png");
+  background-image: url("../images/question/2.png");
   background-size: 100% 100%;
   width: 11.925rem;
   height: 2.637rem;
