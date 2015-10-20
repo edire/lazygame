@@ -282,9 +282,9 @@ body {
   background-image: url("../images/start-img.png");
   background-size: 100% 100%;
   top: 1.6rem;
-  bottom: 3.818rem;
-  left: 1.834rem;
-  right: 2.218rem;
+  bottom: 5.034rem;
+  left: 2.56rem;
+  right: 1.173rem;
 }
 .start-container .start-btn {
   position: absolute;
@@ -292,7 +292,7 @@ body {
   background-size: 100% 100%;
   width: 10.282rem;
   height: 2.986rem;
-  left: 2.9rem;
+  left: 2.56rem;
   bottom: 1.493rem;
   -webkit-animation: big 1s infinite;
 }
@@ -301,7 +301,7 @@ body {
     -webkit-transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(1.2);
+    -webkit-transform: scale(0.8);
   }
   100% {
     -webkit-transform: scale(1);
