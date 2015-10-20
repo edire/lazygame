@@ -2,12 +2,26 @@ html,body{margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden;}
 body {
     position: relative;
 }
+
+.out-box {
+    display:-webkit-box; /* Safari and Chrome */
+    -webkit-transition: -webkit-transform 0.5s;
+    // -webkit-transform: translateX(-750px);
+}
 .question-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    -webkit-box-flex:1.0; /* Safari and Chrome */
+}
+.start-container {
+    -webkit-box-flex:1.0; /* Safari and Chrome */
+}
+.request-container {
+    -webkit-box-flex:1.0; /* Safari and Chrome */
+}
+
+
+.question-container {
+    position: relative;
+    overflow: hidden;
     background-image: url("../images/background.jpg");
     background-size: 100% 100%;
     .top-title {
@@ -187,24 +201,6 @@ body {
         bottom: 1.2rem;
     }
 
-
-    .question1 {
-        background-image: url("../images/question/1.png");
-        background-size: 100% 100%;
-        width: 11.925rem;
-        height: 4rem;
-        left: 0.4rem;
-        top: 3.9rem;
-    }
-    .question2 {
-        background-image: url("../images/question/2.png");
-        background-size: 100% 100%;
-        width: 11.925rem;
-        height: 2.637rem;
-        left: 0.4rem;
-        top: 3.9rem;
-    }
-
 }
 
 @-webkit-keyframes shake {
@@ -257,15 +253,10 @@ body {
 }
 
 
-
-
 .start-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    position: relative;
     background: #ffd731;
+    overflow: hidden;
     .out-line1 {
         position: absolute;
         top: -0.2133rem;
@@ -284,12 +275,31 @@ body {
     }
     .start-img {
         position: absolute;
-        background-image: url("../images/start-img.png");
+        background-image: url("../images/start-box.png");
         background-size: 100% 100%;
         top: 1.6rem;
         bottom: 5.034rem;
         left: 2.56rem;
+        right: 2.773rem;
+    }
+    .start-bear {
+        position: absolute;
+        background-image: url("../images/start-bear.png");
+        background-size: 100% 100%;
+        width: 5.382rem;
+        height: 6.613rem;
         right: 1.173rem;
+        top: 0.64rem;
+    }
+    .start-word {
+        position: absolute;
+        background-image: url("../images/start-word.png");
+        background-size: 100% 100%;
+        width: 4.906rem;
+        height: 17.429rem;
+        top: 3.456rem;
+        left: 4.629rem;
+        -webkit-animation: down 1s ease;
     }
     .start-btn {
         position: absolute;
@@ -305,12 +315,64 @@ body {
 
 }
 
-    @-webkit-keyframes big {
+@-webkit-keyframes big {
     0% {
         -webkit-transform: scale(1)
     }
     50% {
         -webkit-transform: scale(0.8)
+    }
+    100% {
+        -webkit-transform: scale(1)
+    }
+}
+@-webkit-keyframes down {
+    0% {
+        -webkit-transform: translate(0, -50rem)
+    }
+    50% {
+        -webkit-transform: translate(0, -50rem)
+    }
+    100% {
+        -webkit-transform: translate(0, 0)
+    }
+}
+
+
+.request-container {
+    position: relative;
+    background-image: url("../images/background.jpg");
+    background-size: 100% 100%;
+    overflow: hidden;
+    .request-title {
+        position: absolute;
+        background-image: url("../images/request-title.png");
+        background-size: 100% 100%;
+        left: 3.1rem;
+        top: 1.49rem;
+        width: 9.82rem;
+        height: 2.719rem;
+    }
+    .request-content {
+        position: absolute;
+        width: 14.4rem;
+        left: 0.8rem;
+        top: 6rem;
+    }
+    .request-img {
+        position: absolute;
+        width: 11.351rem;
+        bottom: 2.453rem;
+        left: 2.3rem;
+    }
+}
+
+@-webkit-keyframes toBig {
+    0% {
+        -webkit-transform: scale(0)
+    }
+    50% {
+        -webkit-transform: scale(0)
     }
     100% {
         -webkit-transform: scale(1)

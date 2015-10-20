@@ -9,13 +9,27 @@ body {
 body {
   position: relative;
 }
+.out-box {
+  display: -webkit-box;
+  /* Safari and Chrome */
+  -webkit-transition: -webkit-transform 0.5s;
+}
 .question-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url("../images/background.jpg");
+  -webkit-box-flex: 1.0;
+  /* Safari and Chrome */
+}
+.start-container {
+  -webkit-box-flex: 1.0;
+  /* Safari and Chrome */
+}
+.request-container {
+  -webkit-box-flex: 1.0;
+  /* Safari and Chrome */
+}
+.question-container {
+  position: relative;
+  overflow: hidden;
+  background-image: url("./images/background.jpg");
   background-size: 100% 100%;
 }
 .question-container .top-title {
@@ -24,7 +38,7 @@ body {
   height: 4.756rem;
   left: 1.362rem;
   top: 0.8rem;
-  background-image: url("../images/top-title.png");
+  background-image: url("./images/top-title.png");
   background-size: 100% 100%;
   z-index: 888;
 }
@@ -34,7 +48,7 @@ body {
   left: 1.407rem;
   height: 9.481rem;
   top: 4.7rem;
-  background-image: url("../images/question-back.png");
+  background-image: url("./images/question-back.png");
   background-size: 100% 100%;
   z-index: 888;
 }
@@ -47,7 +61,7 @@ body {
   width: 5.333rem;
   height: 4.4rem;
   top: 13.56rem;
-  background-image: url("../images/answer-back.png");
+  background-image: url("./images/answer-back.png");
   background-size: 100% 100%;
   z-index: 888;
   -webkit-transform-origin: top center;
@@ -60,7 +74,7 @@ body {
 }
 .question-container .answer-back .yep-word {
   position: absolute;
-  background-image: url("../images/yep.png");
+  background-image: url("./images/yep.png");
   background-size: 100% 100%;
   width: 1.614rem;
   height: 1.733rem;
@@ -70,7 +84,7 @@ body {
 }
 .question-container .answer-back .nope-word {
   position: absolute;
-  background-image: url("../images/nope.png");
+  background-image: url("./images/nope.png");
   background-size: 100% 100%;
   width: 1.57rem;
   height: 1.718rem;
@@ -80,7 +94,7 @@ body {
 }
 .question-container .left-bear {
   position: absolute;
-  background-image: url("../images/bear.png");
+  background-image: url("./images/bear.png");
   background-size: 100% 100%;
   width: 4.018rem;
   height: 6.458rem;
@@ -92,7 +106,7 @@ body {
   position: absolute;
   width: 9.303rem;
   height: 3.525rem;
-  background-image: url("../images/cloud1.png");
+  background-image: url("./images/cloud1.png");
   background-size: 100% 100%;
   top: 17rem;
   left: -3.3rem;
@@ -103,7 +117,7 @@ body {
   position: absolute;
   width: 9.303rem;
   height: 3.525rem;
-  background-image: url("../images/cloud2.png");
+  background-image: url("./images/cloud2.png");
   background-size: 100% 100%;
   top: 13rem;
   left: 9rem;
@@ -114,7 +128,7 @@ body {
   position: absolute;
   width: 9.303rem;
   height: 3.525rem;
-  background-image: url("../images/cloud3.png");
+  background-image: url("./images/cloud3.png");
   background-size: 100% 100%;
   left: -1rem;
   top: 4.44rem;
@@ -125,7 +139,7 @@ body {
   position: absolute;
   width: 9.303rem;
   height: 3.525rem;
-  background-image: url("../images/cloud1.png");
+  background-image: url("./images/cloud1.png");
   background-size: 100% 100%;
   left: -1rem;
   bottom: -1.44rem;
@@ -136,7 +150,7 @@ body {
   position: absolute;
   width: 9.303rem;
   height: 3.525rem;
-  background-image: url("../images/cloud2.png");
+  background-image: url("./images/cloud2.png");
   background-size: 100% 100%;
   left: 9rem;
   bottom: -1.44rem;
@@ -146,7 +160,7 @@ body {
   position: absolute;
   width: 8.814rem;
   height: 1.007rem;
-  background-image: url("../images/please.png");
+  background-image: url("./images/please.png");
   background-size: 100% 100%;
   bottom: 1rem;
   right: 1rem;
@@ -158,7 +172,7 @@ body {
   position: absolute;
   width: 1.481rem;
   height: 1.481rem;
-  background-image: url("../images/star.png");
+  background-image: url("./images/star.png");
   background-size: 100% 100%;
   z-index: 20;
   opacity: 0.8;
@@ -189,22 +203,6 @@ body {
   left: 12rem;
   -webkit-transform: rotate(37deg);
   bottom: 1.2rem;
-}
-.question-container .question1 {
-  background-image: url("../images/question/1.png");
-  background-size: 100% 100%;
-  width: 11.925rem;
-  height: 4rem;
-  left: 0.4rem;
-  top: 3.9rem;
-}
-.question-container .question2 {
-  background-image: url("../images/question/2.png");
-  background-size: 100% 100%;
-  width: 11.925rem;
-  height: 2.637rem;
-  left: 0.4rem;
-  top: 3.9rem;
 }
 @-webkit-keyframes shake {
   0% {
@@ -254,12 +252,9 @@ body {
   }
 }
 .start-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  position: relative;
   background: #ffd731;
+  overflow: hidden;
 }
 .start-container .out-line1 {
   position: absolute;
@@ -279,16 +274,35 @@ body {
 }
 .start-container .start-img {
   position: absolute;
-  background-image: url("../images/start-img.png");
+  background-image: url("./images/start-box.png");
   background-size: 100% 100%;
   top: 1.6rem;
   bottom: 5.034rem;
   left: 2.56rem;
+  right: 2.773rem;
+}
+.start-container .start-bear {
+  position: absolute;
+  background-image: url("./images/start-bear.png");
+  background-size: 100% 100%;
+  width: 5.382rem;
+  height: 6.613rem;
   right: 1.173rem;
+  top: 0.64rem;
+}
+.start-container .start-word {
+  position: absolute;
+  background-image: url("./images/start-word.png");
+  background-size: 100% 100%;
+  width: 4.906rem;
+  height: 17.429rem;
+  top: 3.456rem;
+  left: 4.629rem;
+  -webkit-animation: down 1s ease;
 }
 .start-container .start-btn {
   position: absolute;
-  background-image: url("../images/start-btn.png");
+  background-image: url("./images/start-btn.png");
   background-size: 100% 100%;
   width: 10.282rem;
   height: 2.986rem;
@@ -302,6 +316,55 @@ body {
   }
   50% {
     -webkit-transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+@-webkit-keyframes down {
+  0% {
+    -webkit-transform: translate(0, -50rem);
+  }
+  50% {
+    -webkit-transform: translate(0, -50rem);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+  }
+}
+.request-container {
+  position: relative;
+  background-image: url("./images/background.jpg");
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+.request-container .request-title {
+  position: absolute;
+  background-image: url("./images/request-title.png");
+  background-size: 100% 100%;
+  left: 3.1rem;
+  top: 1.49rem;
+  width: 9.82rem;
+  height: 2.719rem;
+}
+.request-container .request-content {
+  position: absolute;
+  width: 14.4rem;
+  left: 0.8rem;
+  top: 6rem;
+}
+.request-container .request-img {
+  position: absolute;
+  width: 11.351rem;
+  bottom: 2.453rem;
+  left: 2.3rem;
+}
+@-webkit-keyframes toBig {
+  0% {
+    -webkit-transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(0);
   }
   100% {
     -webkit-transform: scale(1);

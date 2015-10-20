@@ -1,5 +1,7 @@
 function bindEvent() {
+    var windowWidth = $(window).width();
     var font = parseInt($('html').css('font-size'));
+    var currId = 1;
     $('.yep, .nope').on('touchstart', function () {
         
         var self = $(this);
@@ -10,10 +12,14 @@ function bindEvent() {
 
     })
     $('.yep, .nope').on('touchend', function () {
-        
+        if (currId == 3) {
+            $('.out-box').css('-webkit-transform', 'translateX(-'+(2*windowWidth)+'px)')
+            $('.request-img').css('-webkit-animation', 'toBig 1s ease')
+            return;
+        }
         setTimeout(function () {
             $('.question-content').get(0).className = 'question-content';
-            $('.question-content').addClass('question2');
+            $('.question-content').addClass('question'+currId);
             $('.question-content').css({
                 '-webkit-mask-position': ''
             })
@@ -25,5 +31,10 @@ function bindEvent() {
             '-webkit-mask-size': width + 'rem ' + height + 'rem',
             '-webkit-mask-position': '-' + width/2 + 'rem -' + height/2+ 'rem'
         });
+        currId ++;
+    });
+
+    $('.start-btn').on('touchend', function () {
+        $('.out-box').css('-webkit-transform', 'translateX(-'+windowWidth+'px)')
     });
 }
