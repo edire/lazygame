@@ -1,5 +1,5 @@
 .question1 {
-  background-image: url("/images/question/1.png");
+  background-image: url("../images/question/1.png");
   background-size: 100% 100%;
   width: 11.946rem;
   height: 2.986rem;
@@ -7,7 +7,7 @@
   top: 3.9rem;
 }
 .question2 {
-  background-image: url("/images/question/2.png");
+  background-image: url("../images/question/2.png");
   background-size: 100% 100%;
   width: 8.682rem;
   height: 1.642rem;
@@ -15,7 +15,7 @@
   top: 3.9rem;
 }
 .question3 {
-  background-image: url("/images/question/3.png");
+  background-image: url("../images/question/3.png");
   background-size: 100% 100%;
   width: 9.962rem;
   height: 1.642rem;
