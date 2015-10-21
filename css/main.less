@@ -49,7 +49,7 @@ body {
         z-index: 888;
         .question-content {
             position: absolute;
-            -webkit-transition: -webkit-mask-position 1s ease;
+            -webkit-transition: -webkit-mask-position 0.3s ease;
         }
     }
     .answer-back {
@@ -298,10 +298,10 @@ body {
         position: absolute;
         background-image: url("../images/start-word.png");
         background-size: 100% 100%;
-        width: 4.906rem;
-        height: 17.429rem;
         top: 3.456rem;
         left: 4.629rem;
+        right: 6.465rem;
+        bottom: 5.7rem;
         -webkit-animation: down 1s ease;
     }
     .start-btn {
@@ -360,14 +360,33 @@ body {
         position: absolute;
         width: 14.4rem;
         left: 0.8rem;
-        top: 6rem;
+        top: 5rem;
     }
     .request-img {
         position: absolute;
-        width: 11.351rem;
-        bottom: 2.453rem;
-        left: 2.3rem;
-        -webkit-animation: toBig 1s infinite;
+        width: 13.44rem;
+        bottom: 0.493rem;
+        left: 1.28rem;
+    }
+    .regame-btn, .share-btn {
+        position: absolute;
+        width: 6rem;
+        height: 1.621rem;
+        bottom: 10.453rem;
+        border-radius: 0.84rem;
+        border: 2px solid #1b1b1b;
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
+        line-height: 1.621rem;
+    }
+    .regame-btn {
+        left: 1.28rem;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #41b8dc), color-stop(1, #27a7cb));
+    }
+    .share-btn {
+        right: 1.28rem;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffb12f), color-stop(1, #ffa003));
     }
 }
 
