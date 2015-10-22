@@ -76,7 +76,6 @@ function init() {
     $('#contentImg').attr('src', '')
     $('#bearImg').attr('src', '')
 
-
     currId = 1;
     yep = 0;
     nop = 0;

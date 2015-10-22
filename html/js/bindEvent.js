@@ -78,4 +78,10 @@ function bindEvent() {
         $('.out-box').css('-webkit-transform', 'translateX(0px)')
         $('.request-img').css('-webkit-animation', '')
     })
+    $('.share-btn').on('touchend', function () {
+        $('.share-container').show();
+    });
+    $('.share-container').on('touchend', function () {
+        $('.share-container').hide();
+    })
 }
